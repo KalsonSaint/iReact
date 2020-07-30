@@ -26,13 +26,14 @@ class Contacts extends Component{
     }
 
     render() {
+        //destructuring object
         const { contacts } = this.state;
         return(
-            <>
+            <React.Fragment>
                 {contacts.map(contact => 
                     <Contact key={contact.id} contact={contact}/>
                 )}
-            </>
+            </React.Fragment>
         )
     }
 }
