@@ -5,10 +5,15 @@ class Contact extends Component {
 
     static propTypes = { 
         contact : PropTypes.object.isRequired,
-    }
+        deleteClickHandler: PropTypes.func.isRequired
+    };
 
     state = {
         showContatctInfo: false
+    };
+
+    deleteItem = () => {
+        this.props.deleteClickHandler();
     };
 
     render(){
@@ -18,7 +23,16 @@ class Contact extends Component {
 
         return(
             <div className="card card-body mb-3">
-                <h4>{name} <i onClick={() => this.setState({showContatctInfo: !this.state.showContatctInfo})} className="fas fa-sort-down"></i></h4>
+                <h4>{name} 
+                    <i  onClick={() => this.setState({showContatctInfo: !this.state.showContatctInfo})}
+                        className="fas fa-sort-down" 
+                        style={ {cursor: 'pointer'} }>
+                    </i>
+                    <i  className="fas fa-times" 
+                        style={ { cursor: 'pointer', float: 'right', color: 'crimson' } }
+                        onClick={this.deleteItem}>
+                    </i>
+                </h4>
                 { showContatctInfo ? (
                     <ul className="list-group">
                         <li className="list-group-item">Email: {email}</li>
