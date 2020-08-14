@@ -17,13 +17,13 @@ class Contact extends Component {
 
   render() {
     // destructuring props
-    const { name, email, phone } = this.props.contact;
+    const { id, name, email, phone } = this.props.contact;
     const { showContatctInfo } = this.state;
 
     return (
       <Consumer>
         {(value) => {
-          const { dispatch, id } = value;
+          const { dispatch } = value;
           return (
             <div className="card card-body mb-3">
               <h4>
