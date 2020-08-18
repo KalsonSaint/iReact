@@ -38,7 +38,13 @@ class Contact extends Component {
                   style={{ cursor: "pointer" }}
                 ></i>
                 <i
-                  className="fas fa-times" style={{ cursor: "pointer", float: "right", color: "crimson"}} onClick={this.deleteItem.bind(this, id, dispatch)}
+                  className="fas fa-times"
+                  style={{
+                    cursor: "pointer",
+                    float: "right",
+                    color: "crimson",
+                  }}
+                  onClick={this.deleteItem.bind(this, id, dispatch)}
                 ></i>
               </h4>
               {showContatctInfo ? (
