@@ -16,7 +16,7 @@ class AddContacts extends Component {
   onSubmit = (dispatch, e) => {
     e.preventDefault();
     const { name, email, phone } = this.state;
-    
+
     // check for errors
     if (name === "") {
       this.setState({ errors: { name: "Name is required" } });
@@ -50,6 +50,8 @@ class AddContacts extends Component {
       phone: "",
       errors: {},
     });
+
+    this.props.history.push("/");
   };
 
   render() {
