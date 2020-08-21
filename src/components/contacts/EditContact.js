@@ -11,6 +11,20 @@ class EditContact extends Component {
     errors: {},
   };
 
+  async componentDidMount() {
+    const { id } = this.props.match.params;
+    console.log(id);
+    const res = await axios.get(
+      `https://jsonplaceholder.typicode.com/users/${id}`
+    );
+    const contact = res.data;
+    this.setState({
+      name: contact.name,
+      email: contact.email,
+      phone: contact.phone,
+    });
+  }
+
   handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   onSubmit = async (dispatch, e) => {
@@ -38,7 +52,6 @@ class EditContact extends Component {
       phone: "",
       errors: {},
     });
-
     this.props.history.push("/");
   };
 
