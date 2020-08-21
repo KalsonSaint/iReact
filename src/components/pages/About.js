@@ -1,6 +1,6 @@
 import React from "react";
 
-import Test from "./test-cases/Test";
+// import Test from "./test-cases/Test";
 
 const About = () => {
   return (
