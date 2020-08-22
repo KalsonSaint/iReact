@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/iReact/static/css/main.36497136.chunk.css",
+    "main.js": "/iReact/static/js/main.5e5454e4.chunk.js",
+    "main.js.map": "/iReact/static/js/main.5e5454e4.chunk.js.map",
+    "runtime-main.js": "/iReact/static/js/runtime-main.0e6962a3.js",
+    "runtime-main.js.map": "/iReact/static/js/runtime-main.0e6962a3.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/iReact/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.868cd83f.chunk.js": "/iReact/static/js/2.868cd83f.chunk.js",
+    "static/js/2.868cd83f.chunk.js.map": "/iReact/static/js/2.868cd83f.chunk.js.map",
+    "index.html": "/iReact/index.html",
+    "precache-manifest.005b07b3008cddebbe100c89de8d715c.js": "/iReact/precache-manifest.005b07b3008cddebbe100c89de8d715c.js",
+    "service-worker.js": "/iReact/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/iReact/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.36497136.chunk.css.map": "/iReact/static/css/main.36497136.chunk.css.map",
+    "static/js/2.868cd83f.chunk.js.LICENSE.txt": "/iReact/static/js/2.868cd83f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e6962a3.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.868cd83f.chunk.js",
+    "static/css/main.36497136.chunk.css",
+    "static/js/main.5e5454e4.chunk.js"
+  ]
+}
