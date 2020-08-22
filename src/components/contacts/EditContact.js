@@ -13,7 +13,6 @@ class EditContact extends Component {
 
   async componentDidMount() {
     const { id } = this.props.match.params;
-    console.log(id);
     const res = await axios.get(
       `https://jsonplaceholder.typicode.com/users/${id}`
     );
